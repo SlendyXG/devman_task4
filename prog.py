@@ -2,7 +2,6 @@ from PIL import Image
 
 image = Image.open("monro.jpg")
 red, green, blue = image.split()
-image = Image.merge("RGB", (red,green,blue))
 
 coordinates = (100, 0, red.width, red.height)
 cropped_red = red.crop(coordinates)
